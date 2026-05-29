@@ -119,7 +119,7 @@ from groq import Groq
 from dotenv import load_dotenv
 import threading
 import os
-import PdfReader 
+from PyPDF2 import PdfReader
 
 
 # #This code do  work in background..but there is only one message send by user ..It completly read even if user send another response
