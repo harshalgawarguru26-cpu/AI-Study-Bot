@@ -3,7 +3,7 @@ import streamlit as st
 from groq import Groq
 from dotenv import load_dotenv
 import os
-import PdfReader 
+from PyPDF2 import PdfReader 
 
 
 # import subprocess
