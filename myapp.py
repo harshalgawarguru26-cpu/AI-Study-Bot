@@ -2,16 +2,15 @@
 import streamlit as st
 from groq import Groq
 from dotenv import load_dotenv
-import threading
 import os
-import PdfReader 
+from PyPDF2 import PdfReader 
 
 
 
 
-import subprocess
+# import subprocess
 
-current_process = None
+# current_process = None
 
 # def speak(text):
 
@@ -39,7 +38,7 @@ load_dotenv()
 # =========================
 # Initialize Groq Client
 # =========================
-client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+client = Groq(api_key=st.secrets["GROQ_API_KEY"])
 
 # =========================
 # Streamlit Page Config
